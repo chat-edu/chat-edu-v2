@@ -1,4 +1,4 @@
-import {generatePrompt} from "@/prompts/commands/generateMoteNotes";
+import {generatePrompt} from "@/prompts/commands/generateMoreNotes";
 
 import {NoteIdParams} from "@/app/api/notes/[noteId]/NoteIdParams";
 import {getNote} from "@/cosmosPostgres/services/notes";
