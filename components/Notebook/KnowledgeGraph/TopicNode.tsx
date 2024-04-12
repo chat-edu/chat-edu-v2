@@ -6,7 +6,7 @@ import {transparentize} from "@chakra-ui/theme-tools";
 import {Handle, NodeProps, Position} from "reactflow";
 
 import theme from "@/theme";
-import {TopicNode} from "@/types/Topic";
+import {TopicNode as TopicNodeType} from "@/types/Topic";
 
 const handleStyle = {
     width: '4px',
@@ -14,7 +14,7 @@ const handleStyle = {
     borderRadius: '50%',
 };
 
-const TopicNode: ComponentType<NodeProps<TopicNode>> = ({ data }) => {
+const TopicNode: ComponentType<NodeProps<TopicNodeType>> = ({ data }) => {
 
     const backgroundColor = transparentize('brand.500', Math.max(data.completionPercentage, 0.1))(theme)
 
