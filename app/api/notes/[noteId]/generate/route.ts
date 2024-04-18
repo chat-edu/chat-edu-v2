@@ -7,6 +7,8 @@ import {getNotebook} from "@/cosmosPostgres/services/notebooks";
 import {generateWithSystemPrompt} from "@/llm";
 import {Model} from "@/types/Model";
 
+export const maxDuration = 300;
+
 export const POST = async (req: Request, { params }: { params: NoteIdParams }) => {
 
     const body = await req.json();

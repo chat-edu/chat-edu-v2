@@ -8,6 +8,8 @@ import generateAssignmentPrompt from "@/prompts/commands/generateAssignmentPromp
 import {generateWithSystemPrompt} from "@/llm";
 import {Model} from "@/types/Model";
 
+export const maxDuration = 300;
+
 export const POST = async (req: Request) => {
     const body = await req.json();
 

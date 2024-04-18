@@ -6,6 +6,8 @@ import {SubmissionIdParams} from "@/app/api/submissions/freeResponse/[submission
 import {QuestionTypes} from "@/types/assignment/Question";
 import {MultipleChoiceKey} from "@/types/commands/MultipleChoiceQuestion";
 
+export const maxDuration = 300;
+
 export const POST = async (req: Request, {params}: {params: SubmissionIdParams}) => {
     const submissionId = params.submissionId;
     const submission = await getSubmission(submissionId, QuestionTypes.FreeResponse);

@@ -34,7 +34,6 @@ import {
 import {generateAssignmentSummary} from "@/app/api/summaries/assignment/[assignmentId]/generate";
 import {generateNotebookSummary} from "@/app/api/summaries/notebook/[notebookId]/generate";
 import {Model} from "@/types/Model";
-
 export const POST = async (req: Request, { params }: { params: NotebookIdParams}) => {
 
     const notebookId = params.notebookId;
